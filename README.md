@@ -1,1 +1,0 @@
-# Gamaliel-developer.github.io
