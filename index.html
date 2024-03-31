@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="Assets/Image/hero.png" alt="">
+            </div>
+            <h1>Gamaliel Lamadrid Perez</h1>
+            <h2>Ingeniero en Desarrollo y Gestión de Software</h2>
+            <div class="redes">
+                <a href="https://github.com/Gamaliel-developer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gamaliel-lamadrid-perez-44bb38292/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Gamaliel Lamadrid Perez.</span> Soy egresado de la Universidad, de 
+                la carrera de Ingeniería en Desarrollo y Gestión de Software. Decidí estudiar esta 
+                carrera porque es algo que me entretiene y ciertamente me divierte. Soy una persona 
+                responsable a la cual le gusta aprender en general, no solo en el área de mi carrera. 
+                Me especializo más en el área de desarrollo de aplicaciones móviles, pero no me cierro a 
+                otras áreas.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +52 653 155 7538
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            gamaliel.lp05@gmail.com
+                        </li>
+                        <li>
+                            <strong>País</strong>
+                            México
+                        </li>
+                        <li>
+                            <strong>Estado</strong>
+                            Sonora
+                        </li>
+                        <li>
+                            <strong>Ciudad</strong>
+                            San Luis Río Colorado
+                        </li>
+                        <li>
+                            <strong>Idiomas</strong>
+                            Español y Inglés
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>SERIES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fas fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>GYM</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>COMICS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="/Assets/Docs/CV - Gamaliel Lamadrid Perez - Esp.pdf" download="CV - Gamaliel Lamadrid Perez">
+                    <button style="display: inline-block;">
+                        Descargar CV Español <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </a>
+                <a href="Assets/Docs/CV - Gamaliel Lamadrid Perez.pdf" download="CV - Gamaliel Lamadrid Perez">
+                    <button style="display: inline-block;">
+                        Descargar CV Ingles <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Flutter</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería de Desarrollo y Gestión de Software.</h4>
+                        <span class="casa">Universidad Tecnológica de San Luis Río Colorado - utslrc</span>
+                        <span class="fecha">Septiembre 2019 – Agosto 2023</span>
+                        <p>En la universidad, he trabajado con servidores y prácticas de desarrollo web 
+                            y de aplicaciones móviles, tanto de front-end como de back-end. También he 
+                            participado en proyectos universitarios funcionales de páginas web y 
+                            aplicaciones móviles, utilizando bases de datos SQL y NoSQL en un entorno de 
+                            desarrollo en equipo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front-end Developer</h4>
+                        <span class="casa">Wishaft</span>
+                        <span class="puesto">- Interno -</span>
+                        <span class="fecha">Septiembre, 2021 - Diciembre, 2021</span>
+                        <p>Mis tareas consistían en llevar a cabo las actividades asignadas para la 
+                            semana, Principalmente se trataba de desarrollar el front-end y un poco de 
+                            back-end usando el lenguaje flutter, además de implementar anuncios a través 
+                            de Google Ads.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Back-end Developer</h4>
+                        <span class="casa">Bridge Studio MX</span>
+                        <span class="puesto">- Interno -</span>
+                        <span class="fecha">Abril, 2023 – Agosto, 2023</span>
+                        <p>Realizar actividades de backend centradas en la gestión de API, crear operaciones 
+                            CRUD para el proyecto y realizar endpoints para sus respectivas pruebas para que 
+                            puedan ser utilizadas en el front-end.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <div class="video-container">
+                        <video src="Assets/Videos/video - 1.mp4" controls alt="">
+                    </div>
+                    <div class="texto-proyecto">
+                        <h3>Calculadora App</h3>
+                        <p>Es una práctica desarrollada en la universidad de una aplicación 
+                            móvil en <span>React Native</span> de una calculadora</p>
+                        <a href="https://github.com/Gamaliel-developer/Calculadora" target="_blank">
+                            <button style="display: inline-block;">
+                                <i class="fa-brands fa-github"></i> | Repositorio <i class="fa-solid fa-share"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="video-container">
+                        <video src="Assets/Videos/Video - 2.mp4" controls alt="">
+                    </div>
+                    <div class="texto-proyecto">
+                        <h3>CusCO App (Front-end)</h3>
+                        <p>CusCO App es una aplicación móvil realizada como examen final en equipo. Lo que 
+                            se muestra en el video es lo que yo realicé, el cual fue únicamente el front-end 
+                            con datos simulados. Todo el front-end fue realizado con <span>FLUTTER</span>.</p>
+                        <a href="https://github.com/Gamaliel-developer/CusCO_Movil" target="_blank">
+                            <button style="display: inline-block;">
+                                <i class="fa-brands fa-github"></i> | Repositorio <i class="fa-solid fa-share"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="video-container">
+                        <video src="Assets/Videos/Video - 3.mp4" controls alt="">
+                    </div>
+                    <div class="texto-proyecto">
+                        <h3>FinalSpace App</h3>
+                        <p>FinalSpace App fue una aplicación móvil usando <span>FLUTTER</span> y usando 
+                            una <span>API</span> gratuita.</p>
+                        <a href="https://github.com/Gamaliel-developer/Api-FinalSpace" target="_blank">
+                            <button style="display: inline-block;">
+                                <i class="fa-brands fa-github"></i> | Repositorio <i class="fa-solid fa-share"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="video-container">
+                        <video src="Assets/Videos/Video - 4.mp4" controls alt="">
+                    </div>
+                    <div class="texto-proyecto">
+                        <h3>RickAndMorty App</h3>
+                        <p>RickAndMorty App fue otra una aplicación móvil en <span>FLUTTER</span> donde 
+                            segui practicando a paginar y usar una <span>API</span> la cual tambien 
+                            era gratuita.</p>
+                        <a href="https://github.com/Gamaliel-developer/RickAndMorty_App" target="_blank">
+                            <button style="display: inline-block;">
+                                <i class="fa-brands fa-github"></i> | Repositorio <i class="fa-solid fa-share"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="video-container">
+                        <video src="Assets/Videos/Video - 5.mp4" controls alt="">
+                    </div>
+                    <div class="texto-proyecto">
+                        <h3>ChatApp</h3>
+                        <p>ChatApp fue una aplicación móvil en <span>React Native</span> de un Chat 
+                            en <span>Firebase</span> en tiempo real y varios estábamos conectados a 
+                            esta misma.</p>
+                        <a href="https://github.com/Gamaliel-developer/ChatApp" target="_blank">
+                            <button style="display: inline-block;">
+                                <i class="fa-brands fa-github"></i> | Repositorio <i class="fa-solid fa-share"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="video-container">
+                        <video src="Assets/Videos/Video - 6.mp4" controls alt="">
+                    </div>
+                    <div class="texto-proyecto">
+                        <h3>App CRUD con Firebase</h3>
+                        <p>App CRUD fue una práctica de crear una aplicación móvil 
+                            en <span>React Native</span> de un CRUD usando <span>Firebase</span>.</p>
+                        <a href="https://github.com/Gamaliel-developer/CRUD" target="_blank">
+                            <button style="display: inline-block;">
+                                <i class="fa-brands fa-github"></i> | Repositorio <i class="fa-solid fa-share"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="video-container">
+                        <video src="Assets/Videos/Video - 8.mp4" controls alt="">
+                    </div>
+                    <div class="texto-proyecto">
+                        <h3>Pokedex App</h3>
+                        <p>Pokedex App fue otra práctica de crear una aplicación móvil en 
+                            <span>React Native</span> simulando una Pokedex usando una <span>API</span>.</p>
+                        <a href="https://github.com/Gamaliel-developer/Pokedex" target="_blank">
+                            <button style="display: inline-block;">
+                                <i class="fa-brands fa-github"></i> | Repositorio <i class="fa-solid fa-share"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="video-container">
+                        <video src="Assets/Videos/Video - 7.mp4" controls alt="">
+                    </div>
+                    <div class="texto-proyecto">
+                        <h3>Uso de API PayPal</h3>
+                        <p>Este proyecto fue en parejas consistía en crear una aplicación web 
+                            en donde se usara la <span>API</span> de <span>PayPal</span> y se registraran 
+                            los datos de compra a una base de datos <span>SQL</span>, mi compañero y yo 
+                            creamos esta práctica que simulaba una tienda online de mangas japoneses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/Gamaliel-developer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gamaliel-lamadrid-perez-44bb38292/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="/JavaScript/script.js"></script>
+</body>
+</html>
